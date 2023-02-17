@@ -26,7 +26,7 @@ Berikut adalah strategi greedy yang kami gunakan untuk permainan:
 - [NodeJs](https://nodejs.org/en/download/)
 - [Visual Studio Code (optional if you don't want to use IntelliJ)](https://code.visualstudio.com/)
 - [Maven](https://maven.apache.org/)
-- .NET 3.0 & 5.0
+- .NET 3.1 & 5.0
 
 
 ## How To Build The Program
