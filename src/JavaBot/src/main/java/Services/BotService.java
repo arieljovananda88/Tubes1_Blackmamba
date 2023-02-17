@@ -67,7 +67,7 @@ public class BotService {
                             System.out.println("tembak ngares");
                             playerAction.heading = getHeadingBetween(nearestPlayer);
                             playerAction.action = PlayerActions.FIRETORPEDOES;
-                            if(getDistanceBetween(bot, nearestPlayer) < bot.size + nearestPlayer.size + 60) {
+                            if(getDistanceBetween(bot, nearestPlayer) < bot.size + nearestPlayer.size + 50) {
                                 System.out.println("serbu ngares");
                                 playerAction.heading = getHeadingBetween(nearestPlayer);
                                 playerAction.action = PlayerActions.STARTAFTERBURNER;
