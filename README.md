@@ -30,10 +30,11 @@ Berikut adalah strategi greedy yang kami gunakan untuk permainan:
 
 
 ## How To Build The Program
-Build:
-
-
-
+1.Pindah kedalam directory JavaBot yang berada di dalam folder repository ini.
+2. Jika sudah di dalam directory JavaBot jalankan 
+```
+mvn clean package
+```
 
 ## How To Run
 - If you are using Windows, simply double click the ```RunGame.bat```
