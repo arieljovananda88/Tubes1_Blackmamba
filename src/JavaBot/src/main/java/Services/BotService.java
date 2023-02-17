@@ -41,7 +41,7 @@ public class BotService {
             var nearestPlayer = playerList.get(1);
             var nearestFood = foodList.get(0);
             var sizeDiffOfNP = bot.size - nearestPlayer.size;
-            if (bot.size < 40 || (getDistanceBetween(bot, nearestPlayer) > bot.size + nearestPlayer.size + 200)) {
+            if (bot.size < 40 && (getDistanceBetween(bot, nearestPlayer) > bot.size + nearestPlayer.size + 200)) {
                 System.out.println("kemek ngab");
                 playerAction.heading = getHeadingBetween(nearestFood);
                 playerAction.action = PlayerActions.FORWARD;
@@ -56,16 +56,6 @@ public class BotService {
                         System.out.println("kabur ngab");
                         playerAction.heading = -getHeadingBetween(nearestPlayer);
                         playerAction.action = PlayerActions.FORWARD;
-                        /*if(getDistanceBetween(bot,nearestPlayer) < bot.size + nearestPlayer.size + 100){
-                            System.out.println("ngacir");
-                            playerAction.heading = -getHeadingBetween(nearestPlayer);
-                            playerAction.action = PlayerActions.STARTAFTERBURNER;
-                        }
-                        else{
-                            System.out.println("sikon aman");
-                            playerAction.heading = -getHeadingBetween(nearestPlayer);
-                            playerAction.action = PlayerActions.STOPAFTERBURNER;
-                        }*/
                     }
                 } else {
                     if (getDistanceBetween(bot, nearestPlayer) > bot.size + nearestPlayer.size + 70) {
@@ -77,15 +67,17 @@ public class BotService {
                             System.out.println("tembak ngares");
                             playerAction.heading = getHeadingBetween(nearestPlayer);
                             playerAction.action = PlayerActions.FIRETORPEDOES;
-                            if(getDistanceBetween(bot, nearestPlayer) < bot.size + nearestPlayer.size + 60){
+                            if(getDistanceBetween(bot, nearestPlayer) < bot.size + nearestPlayer.size + 60) {
                                 System.out.println("serbu ngares");
                                 playerAction.heading = getHeadingBetween(nearestPlayer);
                                 playerAction.action = PlayerActions.STARTAFTERBURNER;
-                            }
-                        } else {
-                            System.out.println("selaw dulu");
-                            playerAction.heading = getHeadingBetween(nearestPlayer);
-                            playerAction.action = PlayerActions.STOPAFTERBURNER;
+                                }
+                            else{
+                                System.out.println("selaw dulu");
+                                playerAction.heading = getHeadingBetween(nearestPlayer);
+                                playerAction.action = PlayerActions.STOPAFTERBURNER;
+                                }
+
                         }
                     }
                 }
