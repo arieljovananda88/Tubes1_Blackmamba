@@ -48,7 +48,7 @@ public class BotService {
             } else {
                 playerAction.heading = getHeadingBetween(nearestPlayer);
                 if (bot.size < nearestPlayer.size) {
-                    if (getDistanceBetween(bot, nearestPlayer) > bot.size + nearestPlayer.size + 100) {
+                    if (getDistanceBetween(bot, nearestPlayer) > bot.size + nearestPlayer.size + 70) {
                         System.out.println("coba tembak");
                         playerAction.heading = getHeadingBetween(nearestPlayer);
                         playerAction.action = PlayerActions.FIRETORPEDOES;
