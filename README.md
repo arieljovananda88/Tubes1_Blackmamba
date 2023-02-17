@@ -31,7 +31,7 @@ Berikut adalah strategi greedy yang kami gunakan untuk permainan:
 
 ## How To Build The Program
 1.Pindah kedalam directory JavaBot yang berada di dalam folder repository ini.
-2. Jika sudah di dalam directory JavaBot jalankan 
+2.Jika sudah di dalam directory JavaBot jalankan 
 ```
 mvn clean package
 ```
